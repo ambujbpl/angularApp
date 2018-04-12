@@ -59,8 +59,8 @@ myApp.controller("myCtrlHttp", function($scope, $http) {
 AOS.init({
   offset: 200,
   duration: 1200,
-  once: true,
+  // once: true,
   easing: 'ease-in-sine',
   delay: 100,
-  disable: 'mobile'
+  disable: window.innerWidth < 1024,
 });
